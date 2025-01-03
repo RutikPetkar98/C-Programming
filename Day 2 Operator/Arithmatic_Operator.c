@@ -28,9 +28,9 @@ int main(){
 
     //Decremet Operator --
     int num1=10;
-    printf("num=%d\n",num1);
+    printf("num=%d\n",num);
     num1--;
-    printf("num=%d",num1);
+    printf("num=%d",num);
 
     return 0;
 }
