@@ -8,7 +8,7 @@ int main(){
     {
         printf("your mark is %d and A+ grade\n",percent);
     }
-    else if (percent>=81 && percent <=90)
+    else if (percent>=81 && percent <=90) 
     {
         printf("your mark is %d and A grade\n",percent);
     }
