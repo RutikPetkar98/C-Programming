@@ -10,7 +10,7 @@ int main(){
     else
     {
          printf("Num=%d is odd\n",num);
-    }
+    } 
     printf("exiting....");
     
 
