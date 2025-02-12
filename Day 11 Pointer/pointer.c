@@ -19,7 +19,18 @@ int main()
     printf("aptr1%x\n", aptr1);
     printf("*aptr1=%d\n", *aptr1);
 
-    // //array_pointer
+    // Array_Pointer
+    int arr[5] = {1, 2, 3, 4, 5};
+    int *ptr_arr = &arr;
+    printf("(X)arr:-%x\n", arr); // address of array
+    printf("arr:-%d\n", ptr_arr);
+    printf("*ptr_arr:-%d\n", *ptr_arr);
+    ptr_arr++;
+    printf("*ptr_arr++:-%d\n", ptr_arr);
+    ptr_arr++;
+    printf("*ptr_arr++:-%d\n", ptr_arr); // every time change the value of address
+    ptr_arr--;
+    printf("*ptr_arr--:-%d\n", *ptr_arr);
 
     return 0;
 }
