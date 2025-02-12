@@ -14,10 +14,12 @@ int main()
     int *null_ptr = NULL;
     printf("NUll_Ptr:-%d", null_ptr);
 
-    // Simple Pointer(ptr)
-    int *aptr1 = &a;
-    printf("aptr1%x\n", aptr1);
-    printf("*aptr1=%d\n", *aptr1);
+    // // Simple Pointer(ptr)
+    // int *aptr1 = &a;
+    // printf("aptr1%x\n", aptr1);
+    // printf("*aptr1=%d\n", *aptr1);
 
-    return 0;
+    // //array_pointer
+
+        return 0;
 }
