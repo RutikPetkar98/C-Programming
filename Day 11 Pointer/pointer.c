@@ -1,4 +1,10 @@
 #include <stdio.h>
+
+int rutik(int a, int b)
+{
+    printf("in add():-%d\n", (a + b));
+    return a + b;
+}
 int main()
 {
     int a = 20;
@@ -25,12 +31,23 @@ int main()
     printf("(X)arr:-%x\n", arr); // address of array
     printf("arr:-%d\n", ptr_arr);
     printf("*ptr_arr:-%d\n", *ptr_arr);
-    ptr_arr++;
-    printf("*ptr_arr++:-%d\n", ptr_arr);
-    ptr_arr++;
-    printf("*ptr_arr++:-%d\n", ptr_arr); // every time change the value of address
-    ptr_arr--;
-    printf("*ptr_arr--:-%d\n", *ptr_arr);
+    // ptr_arr++;
+    // printf("*ptr_arr++:-%d\n", ptr_arr);
+    // ptr_arr++;
+    // printf("*ptr_arr++:-%d\n", ptr_arr); // every time change the value of address
+    // ptr_arr--;
+    // printf("*ptr_arr--:-%d\n", *ptr_arr);
+
+    while (ptr_arr != NULL && *ptr_arr != 0)
+    {
+        printf("while->*ptr_arr:-%d\n", *ptr_arr);
+        ptr_arr++;
+    }
+
+    // function pointer(pointer to function)
+    int (*fptr)(int, int) = &rutik;
+    int result = fptr(3, 3);
+    printf("result:-%d", result);
 
     return 0;
 }
