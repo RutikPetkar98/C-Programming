@@ -1,6 +1,10 @@
-   // int a = 5, b = 10;
-    // printf("Before swap:- a=%d, b=%d", a, b);
+extern int ext = 40; // value is retained through program execution
 
-    // swap(&a, &b);
-
-    // printf("After swap :a = %d, b = %d\n", a, b);
+void fun_block()
+{
+    // local scope:inside function only
+    printf("function block:\n");
+    auto int aut = 20; // allocates memory in ram.
+    printf("aut=%d\n", aut);
+    aut++;
+}
